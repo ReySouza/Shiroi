@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Uma Alma Escarlate </title>
+  </head>
+  <body>
+    <h1 class="title">A Herdeira do Reino Lunar</h1>
+
+    <!-- modal -->
+    <div id="diceAttributes" class="modal">
+      <div class="modal-content">
+        <img class="modalDice" src="./img/dado.png" alt="Dado" />
+        <h2 id="diceNumber"></h2>
+        <p id="diceType"></p>
+      </div>
+    </div>
+
+    <div id="lifeModal" class="modal with-input">
+      <div class="modal-content">
+        <h2>MODIFICAR VIDA</h2>
+        <hr />
+        <form class="formModal" id="changeLife">
+          <h3>Atual</h3>
+          <input type="number" name="current" id="lifeCurrent" min="0" />
+          <h3>Máximo</h3>
+          <input type="number" name="max" id="lifeMax" min="0" />
+          <input type="submit" value="Salvar" />
+        </form>
+      </div>
+    </div>
+
+    <div id="sanityModal" class="modal with-input">
+      <div class="modal-content">
+        <h2>MODIFICAR SANIDADE</h2>
+        <hr />
+        <form class="formModal" id="changeSanity">
+          <h3>Atual</h3>
+          <input
+            type="number"
+            name="sanityCurrent"
+            id="sanityCurrent"
+            min="0"
+          />
+          <h3>Máximo</h3>
+          <input type="number" name="sanityMax" id="sanityMax" min="0" />
+          <input type="submit" value="Salvar" />
+        </form>
+      </div>
+    </div>
+
+     <div id="staminaModal" class="modal with-input">
+      <div class="modal-content">
+        <h2>MODIFICAR STAMINA</h2>
+        <hr />
+        <form class="formModal" id="changeStamina">
+          <h3>Atual</h3>
+          <input
+            type="number"
+            name="staminaCurrent"
+            id="staminaCurrent"
+            min="0"
+          />
+          <h3>Máximo</h3>
+          <input type="number" name="staminaMax" id="staminaMax" min="0" />
+          <input type="submit" value="Salvar" />
+        </form>
+      </div>
+    </div>
+
+    <div id="manaModal" class="modal with-input">
+      <div class="modal-content">
+        <h2>MODIFICAR ESOTERICA</h2>
+        <hr />
+        <form class="formModal" id="changeMana">
+          <h3>Atual</h3>
+          <input
+            type="number"
+            name="manaCurrent"
+            id="manaCurrent"
+            min="0"
+          />
+          <h3>Máximo</h3>
+          <input type="number" name="manaMax" id="manaMax" min="0" />
+          <input type="submit" value="Salvar" />
+        </form>
+      </div>
+    </div>
+      
+
+    <div id="addWeaponModal" class="modal with-input">
+      <div class="modal-content">
+        <h2>ADICIONAR ARMA</h2>
+        <hr />
+        <form id="addWeaponForm" action="">
+          <table class="weapons" id="newWeapon">
+            <tr>
+              <th>Nome</th>
+              <th>Tipo</th>
+              <th>Dano</th>
+              <th>Ataque</th>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" name="weaponName" id="weaponName" />
+              </td>
+              <td>
+                <select id="weaponType" name="weaponType">
+                  <option value="axe">Machado</option>
+                  <option value="mace">Maça</option>
+                  <option value="tanegashima">Tanegashima</option>
+                  <option value="blowgun">Zarabatana</option>
+                  <option value="bow">Arco e Flecha</option>
+                  <option value="garrote">Garrote</option>
+                  <option value="katana">Katana</option>
+                  <option value="knife">Faca</option>
+                  <option value="kusari">Kusari</option>
+                  <option value="lasso">Laço</option>
+                  <option value="wakizashi">Wakizashi</option>
+                  <option value="shuriken">Shuriken</option>
+                  <option value="batton">Bastão</option>
+                  <option value="sai">Sai</option>
+                  <option value="kunai">Kunai</option>
+                  <option value="naginata">Naginata</option>
+                  <option value="vajra">Vajra</option>
+                  <option value="ofuda">Ofuda</option>
+                  <option value="hammer">Otsuchi</option>
+                  <option value="tessen">Leque</option>
+                  <option value="other">Outro</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" name="weaponDamage" id="weaponDamage" />
+              </td>
+              <td>
+                <input type="text" name="weaponAttack" id="weaponAttack" />
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="Salvar" />
+        </form>
+      </div>
+    </div>
+
+      <div id="addExpertiseModal" class="modal with-input">
+      <div class="modal-content">
+        <h2>ADICIONAR VANTAGEM</h2>
+        <hr />
+        <form id="addExpertiseForm" action="">
+          <table class="expertise" id="newexpertise">
+            <tr>
+              <th>Nome</th>
+              <th>Gasto</th>
+              <th>Descrição</th>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" name="expertiseName" id="expertiseName" />
+              </td>
+              <td>
+                <input type="text" name="expertiseCost" id="expertiseCost" />
+              </td>
+              <td>
+                <input type="text" name="expertiseDescription" id="expertiseDescription" />
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="Salvar" />
+        </form>
+      </div>
+    </div>
+
+       <div id="addExpertise2Modal" class="modal with-input">
+      <div class="modal-content">
+        <h2>ADICIONAR HABILIDADE</h2>
+        <hr />
+        <form id="addExpertise2Form" action="">
+          <table class="expertise2" id="newexpertise2">
+            <tr>
+              <th>Nome</th>
+              <th>Tipo</th>
+              <th>Gasto</th>
+              <th>Dano</th>
+              <th>Tempo de Conjuração</th>
+              <th>Duração</th>
+              <th>Descrição</th>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" name="expertise2Name" id="expertise2Name" />
+              </td>
+              <td>
+                <select id="expertise2Type" name="expertise2Type">
+                  <option value="esoterica">Esoterica</option>
+                  <option value="youjutsu">Youjutsu</option>
+                  <option value="seasonal">Sazonal</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" name="expertise2Cost" id="expertise2Cost" />
+              </td>
+              <td>
+                <input type="text" name="expertise2Damage" id="expertise2Damage" />
+              </td>
+              <td>
+                <input type="text" name="expertise2Time" id="expertise2Time" />
+              </td>
+              <td>
+                <input type="text" name="expertise2Duration" id="expertise2Duration" />
+              </td>
+              <td>
+                <input type="text" name="expertise2Description" id="expertise2Description" />
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="Salvar" />
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="details border">
+        <h2 class="grid-title">DETALHES PESSOAIS</h2>
+        <hr />
+
+     <div class="inputs">
+          <h4>Nome</h4>
+          <input type="text" name="name" id="name" value="" />
+          <h4>Jogador</h4>
+          <input type="text" name="player" id="player" value="" />
+          <h4>Ocupação</h4>
+          <input type="text" name="occupation" id="occupation" value="" />
+          <h4>Idade</h4>
+          <input type="text" name="age" id="age" value="" />
+          <h4>Sexo</h4>
+          <select id="sex" name="sex">
+            <option value="male">Masculino</option>
+            <option value="female">Feminino</option>
+            <option value="other">Outros</option>
+          </select>
+          <h4>Local de nascimento</h4>
+          <input type="text" name="birthplace" id="birthplace" value="" />
+        </div>
+      </div>
+
+      <div class="character">
+        <div class="characterHeader">
+          <img class="characterPhoto" src="./img/Shiroi.png" alt="Foto" />
+          <img class="symbol" src="./img/Shishira.png" alt="Winter" />
+        <div class="inputs">
+          <h4>Energia Sazonal</h4>
+          <input type="text" name="season" id="season" value="" />
+          </div>
+        </div>
+
+        <div class="bars">
+          <h4>Vida</h4>
+          <div class="bar">
+            <div class="lifeBar" style="width: 0%">
+              <p class="barcount" id="lifeCount"></p>
+            </div>
+          </div>
+          <div class="checkboxs">
+            <form action="">
+              <input type="checkbox" id="lesion" name="lesion" value="lesion" />
+              <label for="lesion"> Lesão grave</label>
+              <input type="checkbox" id="possessed" name="possession" value="possession" />
+              <label for="injury"> Possessão</label>
+              <input type="checkbox" id="dying" name="dying" value="dying" />
+              <label for="dying"> Morrendo</label>
+            </form>
+          </div>
+
+          <h4>Sanidade</h4>
+          <div class="sanity">
+            <div class="contentSanityBar">
+              <div class="sanityBar" style="width: 0%">
+                <p class="barcount" id="sanityCount"></p>
+              </div>
+            </div>
+            <img class="sanityDice" src="./img/dado.png" alt="Dado" />
+          </div>
+          <div class="checkboxs">
+            <input
+              type="checkbox"
+              id="traumatized"
+              name="traumatized"
+              value="traumatized"
+            />
+            <label for="traumatized"> Traumatizado</label>
+            <input type="checkbox" id="crazed" name="crazed" value="crazed" />
+            <label for="crazed"> Enlouquecido</label>
+          </div>
+        </div>
+
+          <h4>Stamina</h4>
+          <div class="stamina">
+            <div class="contentStaminaBar">
+              <div class="staminaBar" style="width: 0%">
+                <p class="barcount" id="staminaCount"></p>
+              </div>
+            </div>
+          </div>
+
+        <h4>Esoterica</h4>
+          <div class="mana">
+            <div class="contentmanaBar">
+              <div class="manaBar" style="width: 0%">
+                <p class="barcount" id="manaCount"></p>
+              </div>
+            </div>
+          </div>
+
+        <div class="inputs">
+          <h4>Pontos de Personagem</h4>
+          <input type="text" name="points" id="points" value="" />
+          <h4>Reserva de Energia</h4>
+          <input type="text" name="energy" id="energy" value="" />
+        </div>
+        </div>
+
+      <div class="attributes border">
+        <h2 class="grid-title">ATRIBUTOS</h2>
+        <hr />
+        <div class="attributesList" id="attributesList"></div>
+      </div>
+
+        <div class ="expertise border">
+          <div class="expertiseHeader">
+           <h2 class="grid-title">Vantagens</h2>
+            <button id="addExpertise">+</button>
+        <hr />
+           </div>
+        
+         <table class="expertise" id="expertise">
+            <tr>
+                <th>Nome</th>
+                <th>Gasto</th>
+                <th>Descrição</th>
+            </tr>
+          </table>
+       </div>
+
+        <div id="circle">
+          <input type="text" id="text-input">
+        </div>
+
+      <div class="combat border">
+        <div class="combatHeader">
+          <h2 class="grid-title">COMBATE</h2>
+          <button id="addWeapon">&plus;</button>
+        </div>
+        <hr />
+
+        <table class="weapons" id="weapons">
+          <tr>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Dano</th>
+            <th>Ataque</th>
+          </tr>
+        </table>
+      </div>
+
+      <div class="expertise2 border">
+        <div class="expertise2Header">
+        <h2 class="grid-title">HABILIDADES</h2>
+          <button id="addExpertise2">+</button>
+        <hr />
+      </div>
+
+      <table class="expertise2" id="expertise2">
+        <tr>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Gasto</th>
+            <th>Dano</th>
+            <th>Tempo de Conjuração</th>
+            <th>Duração</th>
+            <th>Descrição</th>
+        </tr>
+      </table>
+     </div>
+    </div>
+
+    <a href="https://reysouza.github.io/Shiroi/SkillTree.html">Árvore de Habilidades</a>
+
+    <script src="characterSheet.js"></script>
+  </body>
+</html>
