@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Uma Alma Efêmera</title>
+  </head>
+  <body>
+     <nav>
+        <div class="logo">
+            <img decoding="async" src="img/Centro.png" alt="Logo Image">
+        </div>
+        <div class="hamburger">
+            <div class="bars1"></div>
+            <div class="bars2"></div>
+            <div class="bars3"></div>
+        </div>
+        <ul class="nav-links">
+            <h4>Pontos de Personagem</h4>
+            <input type="text" name="points" id="points" value="" />
+            <h4>Pontos de Foco</h4>
+            <input type="text" name="focus" id="focus" value="" /> 
+ 
+            <label for="input">Converter PP para PF:</label>
+            <input type="number" id="input">
+           </div>
+          <br>
+           <button onclick="convertNumber()">Converter</button>
+           <br><br>
+           <div id="outputDisplay"></div>
+
+            <li><button class="login-button" href="https://reysouza.github.io/Shiroi/">Retornar</button></li>
+        </ul>
+    </nav>
+
+<div id="mySidebar" class="sidebar">
+  <br></br>
+  <br></br>
+  <a href="#" class="closebtn" onclick="toggleNav()">&times;</a>
+</div>
+
+<img src="img/SkillTree.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="Lenda da herdeira do reino lunar" title="Lenda da herdeira do reino lunar" href="" coords="1762,1141,67" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Verdadeira face do deus secreto" title="Verdadeira face do deus secreto" href="" coords="1754,1392,64" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Vida resplendente de hinarashi-hime" title="Vida resplendente de hinarashi-hime" href="" coords="1563,1620,57" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Koshi-Mushume" title="Koshi-Mushume" href="" coords="1555,1929,73" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Contos de Tottori" title="Contos de Tottori" href="" coords="1821,2098,63" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Contos de Ibaraki" title="Contos de Ibaraki" href="" coords="1717,2209,54" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Contos de Yamagata" title="Contos de Yamagata" href="" coords="1555,2231,50" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Contos de Aomori" title="Contos de Aomori" href="" coords="1378,2209,52" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Contos de Niigata" title="Contos de Niigata" href="" coords="1275,2091,63" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Shichiseiken e o pacto secreto" title="Shichiseiken e o pacto secreto" href="" coords="1939,1620,57" shape="circle" onclick="toggleSidebar(); return false;"> 
+    <area target="" alt="Hyakki Yagyo" title="Hyakki Yagyo" href="" coords="2020,1075,63" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Maldição Celestial" title="Maldição Celestial" href="" coords="2256,1208,70" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Criaturas do reino eterno" title="Criaturas do reino eterno" href="" coords="2543,1208,53" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Pedido Impossivel: Ramos de joia de Hourai" title="Pedido Impossivel: Ramos de joia de Hourai" href="" coords="2543,1509,53" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Olhos que observam tudo" title="Olhos que observam tudo" href="" coords="2757,1053,68" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Mal que permeia todos" title="Mal que permeia todos" href="" coords="2786,1347,57" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Lebre de inaba" title="Lebre de inaba" href="" coords="3044,1068,81" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Superando as impurezas do mundo" title="Superando as impurezas do mundo" href="" coords="3059,1347,69" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Uma vida pristina" title="Uma vida pristina" href="" coords="3324,1281,77" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Caminho da Eternidade" title="Caminho da Eternidade" href="" coords="3310,1465,66" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Uma terrivel premonição" title="Uma terrivel premonição" href="" coords="2012,891,56" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Pacto Suicida" title="Pacto Suicida" href="" coords="2270,803,70" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Virtude guerreira de uma terra pura" title="Virtude guerreira de uma terra pura" href="" coords="1865,773,49" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Mare Crisium" title="Mare Crisium" href="" coords="1732,530,56" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Mare Tranquilitatis" title="Mare Tranquilitatis" href="" coords="1916,501,50" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Mare Inbrium" title="Mare Inbrium" href="" coords="2057,567,65" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Mare Serenitatis" title="Mare Serenitatis" href="" coords="2138,714,53" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Um mundo de boas vontades" title="Um mundo de boas vontades" href="" coords="1658,876,79" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Uma cesta de flores em meio as montanhas" title="Uma cesta de flores em meio as montanhas" href="" coords="1482,663,70" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Tobase" title="Tobase" href="" coords="1482,1134,61" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Novidades vindas de fora" title="Novidades vindas de fora" href="" coords="1489,1465,86" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Tanegashima-jutsu" title="Tanegashima-jutsu" href="" coords="1238,1554,77" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Aliança com os rangaku" title="Aliança com os rangaku" href="" coords="995,1686,68" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Guerra contra os keicho" title="Guerra contra os keicho" href="" coords="818,1885,86" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Inovações cientificas" title="Inovações cientificas" href="" coords="715,1657,63" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Foco em Poder" title="Foco em Poder" href="" coords="501,1804,95" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Foco em Flexibilidade" title="Foco em Flexibilidade" href="" coords="450,1627,66" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Negociações com os nanbam" title="Negociações com os nanbam" href="" coords="988,1428,82" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Inovações navais" title="Inovações navais" href="" coords="715,1451,87" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Um novo começo" title="Um novo começo" href="" coords="803,1244,58" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Fortaleza Imóvel" title="Fortaleza Imóvel" href="" coords="1216,1274,103" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Palacio da Transiência" title="Palacio da Transiência" href="" coords="1253,972,106" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Rejeitamos Forasteiros" title="Rejeitamos Forasteiros" href="" coords="1496,847,70" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Caminho de Yorimasa" title="Caminho de Yorimasa" href="" coords="980,1009,86" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Caminho de Hou Yi" title="Caminho de Hou Yi" href="" coords="966,1200,76" shape="circle" onclick="toggleSidebar(); return false;">
+    <area target="" alt="Yatagarasu" title="Yatagarasu" href="" coords="722,1060,69" shape="circle" onclick="toggleSidebar(); return false;">
+</map>
+    <script src="characterSheet.js"></script>
+  </body>
+</html>
