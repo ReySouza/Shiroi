@@ -734,15 +734,9 @@ hamburger.addEventListener('click', ()=>{
       // Perform the conversion
       var output = input / 3;
       // Display the results
-      document.getElementById("inputDisplay").innerHTML = "Input: " + input;
       document.getElementById("outputDisplay").innerHTML = "Output: " + output;
     }
 
-
-  const button = document.querySelector('.login-button');
-  button.addEventListener('click', function() {
-    window.location.href = 'https://reysouza.github.io/Akari/';
-  });
 
 function toggleSidebar() {
   var sidebar = document.getElementById("mySidebar");
