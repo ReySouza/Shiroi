@@ -683,7 +683,6 @@ function addExpertise2ToTable(expertise2, id) {
         <td>${expertise2.damage}</td>
         <td>${expertise2.time}</td>
         <td>${expertise2.duration}</td>
-        <td>${expertise2.penalty}</td>
         <td>
             <button onclick="showExpertise2Description(${id})">
                 <i class="fa fa-info-circle"></i>
