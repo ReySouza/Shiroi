@@ -788,13 +788,31 @@ function closeSidebar() {
     let content;
     switch (title) {
       case "Lenda da herdeira do reino lunar":
-        content = "Gasto: Livre <br> Requisito: Nenhum <br> Uma vez <br> Em uma terra dos sonhos <br> Eu pensei <br> que poderia ser livre <br> Mas agora a fome nunca dorme";
+        content = "Gasto: Livre <br> Requisito: Nenhum <br><br><br> A névoa se tornava mais espessa ao pé da montanha e o frio só aumentava, os 3 guerreiros se encostavam, virados de costas um para o outro para conseguirem se defender dos ataques, a escuridão era impiedosa e as marcas no chão eram a unica trilha. Em cima de uma árvore nas proximidades, a besta preparava seu ataque, ela lambia seu beiços, limpando o resto de carne de seus dentes e afiando suas unhas contra a madeira molhada e podre, o animal prepara uma parte lisa da árvore e começa a escrever com suas unhas meladas de sangue: " Era uma vez <br><br> em uma terra dos sonhos <br><br> eu pensei que poderia ser livre <br><br> mas agora a fome nunca dorme <br><br> Um lapso subito de memória faz a criatura perder a noção por um tempo. Ela logo volta para terminar o serviço" ";
         break;
-      case "A Verdadeira Face do Deus Secreto":
-        content = "This is some custom content for the 'A Verdadeira Face do Deus Secreto' section.";
+      case "Verdadeira Face do Deus Secreto":
+        content = "Gasto: Livre <br> Requisito: Nenhum <br><br><br> No antigo Mausoléu Umebachi-Goryo, na vila destruída de Taishi, vocês fizeram uma descoberta incrivel, vocês libertaram uma nova força ao mundo, o Deus Secreto, absoluto em seu poder e supremo em sua sagacidade estará cada vez mais próximo de vocês, sintam seu poder correndo por tuas veias e vejam a natureza respirar e a energia se movimentar ";
         break;
-      case "Fé Nativa em meio a terra morta":
-        content = "This is some custom content for the 'Fé Nativa em meio a terra morta' section.";
+      case "Vida resplendente de hinarashi-hime":
+        content = "Gasto: 3 PF <br> Requisito: Nenhum <br><br><br> Existe muita especulação sobre a verdadeira localização do palácio do Dragão-Rei, alguns acreditam que o palácio fique em Munetsuchi, um lago localizado no centro do mundo, outros acreditam que o palácio fique localizado no litoral da fantástica ilha de Hourai, mas a verdade é que o palácio do Dragão-Rei sempre ficou na lua e aqueles que lá habitam são principes e princesas do nobre dragão <br><br> Ao comprar este foco, você ganha 5 pontos sazonais ";
+        break;
+      case "Koshi-Musume":
+        content = "Gasto: 2 PF <br> Requisito: Nenhum <br><br><br> Usuyukisou (薄雪草) ou erva/grama de neve fina é o nome tipico para a flor Leontopodium japonicum, é uma flor tradicionalmente encontrada em montanhas, ela resiste ao frio intenso e retem sua água criando uma fina capa de gelo em volta de si. Algumas lendas contam que essa flor teria sido plantada originalmente por Tsukuyomi-no-Mikoto na terra como uma forma de simbolizar a conexão eterna entre a terra e a capital lunar <br><br> Ao comprar este foco, você se aproximará mais de sua forma alternativa, você estará no controle de suas ações enquanto a estiver controlando porém, você terá que escolher entre controlar os instintos animalescos ou deixar acontecer ";
+        break;
+      case "Contos de Niigata":
+        content = "Gasto: 4 PF  <br> Requisito: Nenhum <br><br><br> Na província de Niigata, é dito que a Yuki Onna aparece como uma vampira da neve, assombrando as florestas nevadas e buscando se alimentar. Ela sobrevive sugando a energia vital do corpo humano. Onde ela então consegue extrair um composto chamado de seiki, para fazer isso, primeiro ela congela suas vitimas e então suga o seiki através da boca delas. <br><br> Ao comprar este foco, você poderá ganhar certos traços desta Yuki Onna, você se torna uma vampira capaz de drenar a energia vital latente dos outros, você consegue drenar stamina das pessoas e transformar em energia sazonal e mana ";
+        break;
+      case "Contos de Aomori":
+        content = "Gasto: 4 PF <br> Requisito: Nenhum <br><br><br> Na província de Aomori, existe uma história de quando uma mulher vagava pela cidade no meio de uma nevasca, um casal viu sua pele pálida e gelada e então a chamou para entrar e ficar na frente da fogueira. Depois de um tempo a mulher queria sair de volta para continuar sua jornada, porém o homem não queria a deixar ir, ele pegou sua mão para que ela não abrisse a porta. Sua pele era gélida, calafrios percorreram o corpo do homem quando de repente a mulher se tornou um redemoinho de neve e fugiu da casa. <br><br> Ao comprar este foco, você adquire algumas característica desta Yuki Onna, sua pele passa a atingir tons de azul e ficar gélida, você ganha um modificador de +2 para se defender de ataques corpo a corpo e pode viajar distâncias curtas como um redemoinho de neve ";
+        break;
+      case "Contos de Yamagata":
+        content = "Gasto: 4 <br> Requisito: Nenhum <br><br><br> Na província de Yamagata, existem histórias que contam que a Yuki-onna é uma princesa lunar, a história conta que a vida dela na capital lunar era cheia de luxurias, porém era muito entediante. Ela era fascinada pelo planeta terra, então, um dia ela fugiu da lua e caiu na terra viajando usando neve. Porém, ela ficou presa na terra, agora ela aparece em noites de lua cheia, tentando achar alguma forma de voltar. <br><br> Ao comprar este foco, você poderá adquirir certas características desta Yuki Onna, suas habilidades com o elemento lunar, mesmo aquelas possibilitadas pelo Kune-Kune ganharão ações bônus com componente sazonais ";
+        break;
+      case "Contos de Ibaraki":
+        content = "Gasto: 4 <br> Requisito: Nenhum <br><br><br> Na província de Ibaraki, é dito que a Yuki-Onna busca travar uma conversa com suas vítimas, aqueles que ignorarem seu chamado serão arremessados de um penhasco enquanto aqueles que conversarem com ela serão congelados e depois mortos. <br><br> Ao comprar este foco, você poderá adquirir características dessa Yuki-Onna, seus dedos se tornarão gélidos e você conseguirá ver as pontas ficando cada vez mais pretas, você poderá congelar objetos pequenos apenas tocando neles, se você decidir usar esta habilidade gastando mana, você poderá congelar coisas maiores ";
+        break;
+      case "Contos de Tottori":
+        content = "Gasto: 4 PF <br> Requisito: Nenhum <br><br><br> Na província de Tottori, é dito que a Yuki-Onna viaja usando o vento e aparece em dias onde a neve é mais leve, ela aparece balançando um gohei branco, quando ela vê alguém, ela chega para a pessoa pedindo água, se a pessoa oferecer água gelada, ela aumenta de tamanho, se a pessoa oferecer água quente, ela derrete e some. Ao comprar este foco, você consegue algumas características desta Yuki-Onna, você pode gerar cristais de gelo a partir das chamas em suas costas, estes cristais de gelo podem então ser transformados para formar qualquer coisa que você quiser e conseguir produzir desde armas até armaduras. ";
         break;
       default:
         content = "This is some default content for an undefined section.";
