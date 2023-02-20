@@ -829,6 +829,24 @@ function closeSidebar() {
       case "Mare Serenitatis":
         content = "Gasto: 3 PF <br> Requisito: Nenhum <br><br><br> O Mar da Serenidade é talvez o mais conhecido de todos, ao longo da sua infância, você ouviu lendas de coelhos amassando mochi usando martelos e que na própria lua, você conseguiria ver uma figura de um coelho. Estes são os habitantes da capital lunar, um lugar fantástico onde não existe doença nem morte, todos vivem eternamente. É possível que Hourai tenha sido criada pelos Deuses Terrestres para imitar a capital lunar. <br><br> Ao comprar este foco, você irá adquirir os trações de um coelho lunar, durante 1h, você poderá se comunicar por telepatia, sua visão será calibrada para conseguir perceber ilusões e tudo aquilo que está escondido ";
         break;
+      case "Uma terrivel premonição":
+        content = "Gasto: 3 PF (Coletivo) <br> Requisito: Nenhum <br><br><br> Na mansão Himura, vocês descobriram que eles apareciam estar executando experimentos envolvendo almas para um fim que até então vocês não sabem. Enquanto estavam no porão, vocês encontraram um desses experimentos, uma boneca, Hourai, suas almas foram atreladas a ela, não por escolha, mas por necessidade, como uma simbiose, vocês agora devem cuidar dela e garantir sua segurança ou sofrerão consequências horriveis. <br><br> Ao comprar este foco, vocês irão melhorar a capacidade de cura da boneca, ela terá sua energia espiritual total dobrada e poderá curar até 3d6 de cura. ";
+        break;
+      case "Pacto Suicida":
+        content = "Gasto: 4 PF (Coletivo) <br> Requisito: Descobrir a identidade da alma presa na Boneca <br><br><br> Vocês já aproximaram muito da boneca desde que a conseguiram, vocês possuem uma ideia boa de como cuidar dela e a manter segura, só que agora que vocês a conhecem melhor, sabem que para continuarem usufruindo de seus poderes, vocês precisarão ir além daquele pacto de sangue que fizeram. <br><br> Ao comprar este foco, a capacidade espiritual da boneca irá ser 3x maior que o original e ela poderá curar qualquer quantidade de vida";
+        break;
+      case "Hyakki Yagyo":
+        content = "Gasto: Livre <br> Requisito: Nenhum <br><br><br> Pouco antes de vocês se encontrarem, um livro chamado Shūgaishō, cujo autor é desconhecido, continha instruções sobre como sobreviver ao Hyakki Yagyo, caso ele viesse a ocorrer. A instrução é não sair de casa em hipotése alguma e aqueles que ouvirem o desfile, devem conjurar estas palavras <br><br> KA-TA-SHI-HA-YA, E-KA-SE-NI-KU-RI-NI, TA-ME-RU-SA-KE, TE-E-HI, A-SHI-E-HI, WA-RE-SHI-KO-NI-KE-RI. Talvez seja tarde demais para isso";
+        break;
+      case "Maldição Celestial":
+        content = "Gasto: 2 PF (Coletivo) <br> Requisito: Nenhum <br><br><br> Não é possível que tudo tenha sido uma coincidência, o roubo da Shichiseiken e o ataque em Naniwa devem estar relacionados de alguma forma, tudo foi planejado, a vinda do imperador, o fluxo de Youkais nunca vistos antes no dia do festival de Tsukimi, o festival da Lua. Alguma coisa está prestes a acontecer e vocês são os catalisadores para o cataclisma";
+        break;
+      case "Criaturas do reino eterno":
+        content = "Gasto: Livre <br> Requisito: Usando o Kune-Kune, absorva 3 Youkais <br><br><br> O Kune-Kune ainda é uma anomalia completa, uma criatura sem qualquer semblante de uma alma ou espírito, e que não se assemelha a um Youkai tradicional em nenhum sentido da palavra. Seu grande diferencial é a sua capacidade de se adaptar, multiplicar, moldar, como um organismo, ou uma colônia de organismos que atuam em perfeita sincrônia, apesar dele não revelar muitos detalhes sobre si mesmo, talvez isso seja pelo melhor. <br><br> Ao comprar este foco, você poderá desbloquear um novo arsenal de habilidades exclusivas ao Kune-Kune, você ganhará 3 habilidades a sua escolha para ele";
+        break;
+      case "Pedido Impossivel: Ramos de joia de Hourai":
+        content = "Gasto: Livre <br> Requisito: Visitar a verdadeira ilha de Hourai <br><br><br> Na fantástica história da Princesa Kaguya, ela exigiu que seus pretendentes viajassem por todos os cantos do planeta atrás de items mágicos, ela sabia que os homens não sobreviveriam a viagem e que os itens poderiam até mesmo não existir, um deles é um galho tirado de uma árvore de Udongein, uma árvore que só existe em 2 lugares, em Hourai e na Lua. Vocês já estiveram em Hourai, uma versão falsa dela, mas ainda assim, já estiveram. Você acredita que pode conseguir este pedido impossivel, talvez juntando todos eles, algo ocorra";
+        break;
       default:
         content = "This is some default content for an undefined section.";
     }
