@@ -847,8 +847,35 @@ function closeSidebar() {
       case "Pedido Impossivel: Ramos de joia de Hourai":
         content = "Gasto: Livre <br> Requisito: Visitar a verdadeira ilha de Hourai <br><br><br> Na fantástica história da Princesa Kaguya, ela exigiu que seus pretendentes viajassem por todos os cantos do planeta atrás de items mágicos, ela sabia que os homens não sobreviveriam a viagem e que os itens poderiam até mesmo não existir, um deles é um galho tirado de uma árvore de Udongein, uma árvore que só existe em 2 lugares, em Hourai e na Lua. Vocês já estiveram em Hourai, uma versão falsa dela, mas ainda assim, já estiveram. Você acredita que pode conseguir este pedido impossivel, talvez juntando todos eles, algo ocorra";
         break;
+      case "Tobase":
+        content = "Gasto: Livre <br> Requisito: Nenhum <br><br><br> Tobase ou deixar voar, é uma expressão simbólica para a escola do Kyujutsu, uma arte que está caindo em desuso rapidamente desde o inicio da invasão Européia. O clã Otomo tem historicamente mantido as tradições Japonesas, resistindo aos estrangeiros, exceto por alguns que tem visto novas oportunidades nas tecnologias trazidas do oeste. Neste momento, cabe a você decidir o caminho que irá seguir";
+        break;
+      case "Rejeitamos Forasteiros":
+        content = "Gasto: 3 PF <br> Requisito: Nenhum <br> Este foco é mutualmente exclusivo com Novidades vindas de fora <br><br><br> Defender a cultura Japonesa frente a qualquer ameaça, seja ela física ou espiritual, deve ser a prioridade para todo guerreiro destas ilhas. Você colocará sua vida em jogo para conseguir vingança pelo seu clã, reconquistar Hanagatami e expulsar os Europeus ao mesmo tempo <br><br> Ao comprar este foco, você aprenderá a customizar as cordas e as flechas do seu arco, você ainda precisará comprar os materiais, porém você poderá armar veneno nas suas flechas e até mesmo montar bombas nela  ";
+        break;
+      case "Novidades vindas de fora":
+        content = "Gasto: 3 PF <br> Requisito: Nenhum <br> Este foco é mutualmente exclusivo com Rejeitamos Forasteiros <br><br><br> De qualquer forma que você olhar, a maior ameaça ao Japão não é terrena, mas espiritual, criaturas monstruosas e demônios assaltam o mundo, matam as pessoas e se alimentam de suas almas, o melhor jeito de combater este tipo de ameaça é adotando novas técnicas. Os invasores possuem tecnologias fascinantes desde armas que disparam bombas de chumbo até armaduras que resistem a katanas, podemos aprender um pouco mais com eles. <br><br> Ao comprar este foco, você aprenderá a utilizar uma Tanegashima, um rifle tradicional";
+        break;
+      case "Tanegashima-jutsu":
+        content = "Gasto: Livre <br> Requisito: Obter uma Tanegashima <br><br><br> As armas dos Europeus não são isentas das regras deste mundo, especialmente aquelas mais espirituais, concentre seu espírito na arma e ela irá ressonar de volta, dessa forma você conseguirá liberar seu verdadeiro poder. <br><br> Ao comprar este foco, você desbloqueia um segundo estilo de luta, o Tanegashimajutsu, um estilo de luta novo e extremamente poderoso utilizando rifles e canhões ";
+        break;
+      case "Palacio da Transiência":
+        content = "Gasto: 4 PF <br> Requisito: Nenhum <br> Este foco é mutualmente exclusivo com Fortaleza Imóvel <br><br><br>  ";
+        break;
+      case "Fortaleza Imóvel":
+        content = "Gasto: Livre <br> Requisito: Usando o Kune-Kune, absorva 3 Youkais <br><br><br> O Kune-Kune ainda é uma anomalia completa, uma criatura sem qualquer semblante de uma alma ou espírito, e que não se assemelha a um Youkai tradicional em nenhum sentido da palavra. Seu grande diferencial é a sua capacidade de se adaptar, multiplicar, moldar, como um organismo, ou uma colônia de organismos que atuam em perfeita sincrônia, apesar dele não revelar muitos detalhes sobre si mesmo, talvez isso seja pelo melhor. <br><br> Ao comprar este foco, você poderá desbloquear um novo arsenal de habilidades exclusivas ao Kune-Kune, você ganhará 3 habilidades a sua escolha para ele";
+        break;
+      case "Shichiseiken e o pacto secreto":
+        content = "Gasto: Livre <br> Requisito: Visitar a verdadeira ilha de Hourai <br><br><br> Na fantástica história da Princesa Kaguya, ela exigiu que seus pretendentes viajassem por todos os cantos do planeta atrás de items mágicos, ela sabia que os homens não sobreviveriam a viagem e que os itens poderiam até mesmo não existir, um deles é um galho tirado de uma árvore de Udongein, uma árvore que só existe em 2 lugares, em Hourai e na Lua. Vocês já estiveram em Hourai, uma versão falsa dela, mas ainda assim, já estiveram. Você acredita que pode conseguir este pedido impossivel, talvez juntando todos eles, algo ocorra";
+        break;
+      case "Caminho de Yorimasa":
+        content = "Gasto: Livre <br> Requisito: Usando o Kune-Kune, absorva 3 Youkais <br><br><br> O Kune-Kune ainda é uma anomalia completa, uma criatura sem qualquer semblante de uma alma ou espírito, e que não se assemelha a um Youkai tradicional em nenhum sentido da palavra. Seu grande diferencial é a sua capacidade de se adaptar, multiplicar, moldar, como um organismo, ou uma colônia de organismos que atuam em perfeita sincrônia, apesar dele não revelar muitos detalhes sobre si mesmo, talvez isso seja pelo melhor. <br><br> Ao comprar este foco, você poderá desbloquear um novo arsenal de habilidades exclusivas ao Kune-Kune, você ganhará 3 habilidades a sua escolha para ele";
+        break;
+      case "Caminho de Hou Yi":
+        content = "Gasto: Livre <br> Requisito: Visitar a verdadeira ilha de Hourai <br><br><br> Na fantástica história da Princesa Kaguya, ela exigiu que seus pretendentes viajassem por todos os cantos do planeta atrás de items mágicos, ela sabia que os homens não sobreviveriam a viagem e que os itens poderiam até mesmo não existir, um deles é um galho tirado de uma árvore de Udongein, uma árvore que só existe em 2 lugares, em Hourai e na Lua. Vocês já estiveram em Hourai, uma versão falsa dela, mas ainda assim, já estiveram. Você acredita que pode conseguir este pedido impossivel, talvez juntando todos eles, algo ocorra";
+        break;
       default:
-        content = "This is some default content for an undefined section.";
+        content = "Se você está lendo isso, esse foco está trancado (ou você encontrou um bug no site)";
     }
     sidebar.innerHTML = `
       <a href="#" class="closebtn" onclick="toggleNav()">&times;</a>
