@@ -787,8 +787,8 @@ function closeSidebar() {
   function updateSidebarContent(title) {
     let content;
     switch (title) {
-      case "A Lenda da Guerreira que Celebra a Maidono":
-        content = "This is some custom content for the 'A Lenda da Guerreira que Celebra a Maidono' section.";
+      case "Lenda da herdeira do reino lunar":
+        content = "Gasto: Livre <br> Requisito: Nenhum <br> Uma vez <br> Em uma terra dos sonhos <br> Eu pensei <br> que poderia ser livre <br> Mas agora a fome nunca dorme";
         break;
       case "A Verdadeira Face do Deus Secreto":
         content = "This is some custom content for the 'A Verdadeira Face do Deus Secreto' section.";
