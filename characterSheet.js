@@ -796,7 +796,7 @@ function closeSidebar() {
       case "Vida resplendente de hinarashi-hime":
         content = "Gasto: 3 PF <br> Requisito: Nenhum <br><br><br> Existe muita especulação sobre a verdadeira localização do palácio do Dragão-Rei, alguns acreditam que o palácio fique em Munetsuchi, um lago localizado no centro do mundo, outros acreditam que o palácio fique localizado no litoral da fantástica ilha de Hourai, mas a verdade é que o palácio do Dragão-Rei sempre ficou na lua e aqueles que lá habitam são principes e princesas do nobre dragão <br><br> Ao comprar este foco, você ganha 5 pontos sazonais ";
         break;
-      case "Koshi-Musume":
+      case "Koshi-Mushume":
         content = "Gasto: 2 PF <br> Requisito: Nenhum <br><br><br> Usuyukisou (薄雪草) ou erva/grama de neve fina é o nome tipico para a flor Leontopodium japonicum, é uma flor tradicionalmente encontrada em montanhas, ela resiste ao frio intenso e retem sua água criando uma fina capa de gelo em volta de si. Algumas lendas contam que essa flor teria sido plantada originalmente por Tsukuyomi-no-Mikoto na terra como uma forma de simbolizar a conexão eterna entre a terra e a capital lunar <br><br> Ao comprar este foco, você se aproximará mais de sua forma alternativa, você estará no controle de suas ações enquanto a estiver controlando porém, você terá que escolher entre controlar os instintos animalescos ou deixar acontecer ";
         break;
       case "Contos de Niigata":
