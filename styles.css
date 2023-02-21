@@ -986,6 +986,7 @@ nav{
         display: inline-block;
         width: 20px;
         height: 20px;
+        z-index: 1; /* bring the checkbox to the front */
     }
 
     .checkbox:checked:after {
@@ -998,4 +999,9 @@ nav{
         height: 100%;
         text-align: center;
         line-height: 20px;
+    }
+
+    .image-map {
+        position: relative;
+        z-index: 0; /* set the image map behind the checkbox */
     }
