@@ -874,7 +874,6 @@ function closeSidebar() {
     sidebar.innerHTML = `
       <a href="#" class="closebtn" onclick="toggleNav()">&times;</a>
       <br></br>
-      <br></br>
       <h3>${title}</h3>
       <p>${content}</p>
     `;
