@@ -1,7 +1,7 @@
 const data = {
    name: 'Yume Otomo ',
   player: 'Zen',
-  occupation: 'Ronin',
+  occupation: 'Onna-Bugeisha',
   age: 26,
   sex: 'female',
   birthplace: 'Hanagatami, Clã Otomo',
@@ -860,19 +860,13 @@ function closeSidebar() {
         content = "Gasto: Livre <br> Requisito: Obter uma Tanegashima <br><br><br> As armas dos Europeus não são isentas das regras deste mundo, especialmente aquelas mais espirituais, concentre seu espírito na arma e ela irá ressonar de volta, dessa forma você conseguirá liberar seu verdadeiro poder. <br><br> Ao comprar este foco, você desbloqueia um segundo estilo de luta, o Tanegashimajutsu, um estilo de luta novo e extremamente poderoso utilizando rifles e canhões ";
         break;
       case "Palacio da Transiência":
-        content = "Gasto: 4 PF <br> Requisito: Nenhum <br> Este foco é mutualmente exclusivo com Fortaleza Imóvel <br><br><br>  ";
+        content = "Gasto: 4 PF <br> Requisito: Nenhum <br> Este foco é mutualmente exclusivo com Fortaleza Imóvel <br><br><br> A lua, um visitante fugaz no céu noturno, Lembra-nos da natureza transitória e passageira da vida, Em uma dança graciosa que cresce e minguante por sua vez, Deixando-nos a refletir sobre o que podemos aprender. Assim como a lua, também somos apenas temporários, Flutuando pelo mundo, sempre tão instáveis. <br><br> Ao comprar este foco, quando uma criatura for acertada com suas flechas e estiver com menos da metade da vida, ela deve fazer um teste de Von ou levará o dobro de dano";
         break;
       case "Fortaleza Imóvel":
-        content = "Gasto: Livre <br> Requisito: Usando o Kune-Kune, absorva 3 Youkais <br><br><br> O Kune-Kune ainda é uma anomalia completa, uma criatura sem qualquer semblante de uma alma ou espírito, e que não se assemelha a um Youkai tradicional em nenhum sentido da palavra. Seu grande diferencial é a sua capacidade de se adaptar, multiplicar, moldar, como um organismo, ou uma colônia de organismos que atuam em perfeita sincrônia, apesar dele não revelar muitos detalhes sobre si mesmo, talvez isso seja pelo melhor. <br><br> Ao comprar este foco, você poderá desbloquear um novo arsenal de habilidades exclusivas ao Kune-Kune, você ganhará 3 habilidades a sua escolha para ele";
+        content = "Gasto: 4 PF <br> Requisito: Nenhum <br> Este foco é mutualmente exclusivo com Palacio da Transiência <br><br><br> No céu noturno, a lua reina suprema, Um símbolo de constância, firme e serena, Enquanto as estrelas cintilam e desaparecem, ela permanece, Uma presença atemporal, eterna e imutável. Enquanto tudo mais deve passar, a lua perdura, Um farol de esperança que sempre assegura. <br><br> Ao comprar este foco, você conseguirá disparar mais de uma flecha ao mesmo, isto pode ser muito util para você acertar vários alvos ao mesmo tempo ou o mesmo alvo com diversas flechas";
         break;
       case "Shichiseiken e o pacto secreto":
-        content = "Gasto: Livre <br> Requisito: Visitar a verdadeira ilha de Hourai <br><br><br> Na fantástica história da Princesa Kaguya, ela exigiu que seus pretendentes viajassem por todos os cantos do planeta atrás de items mágicos, ela sabia que os homens não sobreviveriam a viagem e que os itens poderiam até mesmo não existir, um deles é um galho tirado de uma árvore de Udongein, uma árvore que só existe em 2 lugares, em Hourai e na Lua. Vocês já estiveram em Hourai, uma versão falsa dela, mas ainda assim, já estiveram. Você acredita que pode conseguir este pedido impossivel, talvez juntando todos eles, algo ocorra";
-        break;
-      case "Caminho de Yorimasa":
-        content = "Gasto: Livre <br> Requisito: Usando o Kune-Kune, absorva 3 Youkais <br><br><br> O Kune-Kune ainda é uma anomalia completa, uma criatura sem qualquer semblante de uma alma ou espírito, e que não se assemelha a um Youkai tradicional em nenhum sentido da palavra. Seu grande diferencial é a sua capacidade de se adaptar, multiplicar, moldar, como um organismo, ou uma colônia de organismos que atuam em perfeita sincrônia, apesar dele não revelar muitos detalhes sobre si mesmo, talvez isso seja pelo melhor. <br><br> Ao comprar este foco, você poderá desbloquear um novo arsenal de habilidades exclusivas ao Kune-Kune, você ganhará 3 habilidades a sua escolha para ele";
-        break;
-      case "Caminho de Hou Yi":
-        content = "Gasto: Livre <br> Requisito: Visitar a verdadeira ilha de Hourai <br><br><br> Na fantástica história da Princesa Kaguya, ela exigiu que seus pretendentes viajassem por todos os cantos do planeta atrás de items mágicos, ela sabia que os homens não sobreviveriam a viagem e que os itens poderiam até mesmo não existir, um deles é um galho tirado de uma árvore de Udongein, uma árvore que só existe em 2 lugares, em Hourai e na Lua. Vocês já estiveram em Hourai, uma versão falsa dela, mas ainda assim, já estiveram. Você acredita que pode conseguir este pedido impossivel, talvez juntando todos eles, algo ocorra";
+        content = "Gasto: Livre <br> Requisito: Traduzir os documentos encontrados no Mausoléu <br><br><br> Finalmente o nome verdadeiro do Deus secreto foi revelado, porém ainda não é possível determinar a razão para ele estar se envolvendo com a Shichiseiken e o Principe Shotoku, é necessário investigar mais a fundo";
         break;
       default:
         content = "Se você está lendo isso, esse foco está trancado (ou você encontrou um bug no site)";
