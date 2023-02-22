@@ -759,7 +759,7 @@ function toggleSidebar() {
 }
 
 function openSidebar() {
-  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("mySidebar").style.width = "500px";
 }
 
 function closeSidebar() {
